@@ -8,7 +8,7 @@ export default function Home() {
     <title>Inicio | Ig.News</title>
     </Head>
 
-    <h1  >Hello Word</h1>
+
 
     </>
   )

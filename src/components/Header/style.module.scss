@@ -17,47 +17,54 @@ align-items: center;
         
         margin-left: 5rem;
         height: 5rem;
-    }
 
 
-
-    a{
-        display: inline-block;
-        position: relative;
-        padding: 0 0.5rem;
-        height: 5rem;
-        line-height: 5rem;
-        color: var(--gray-300);
-
-        transition: color 0.2s ;
-
-        // Distancia as aconras a partir da segunda
-        & + a {
-            margin-left: 2rem;
-        }
-        
-        &:hover{
-            color: var(--white);
-        }
-
-
-
-        // Personalização da aba aberta
-            &.active {
+        a{
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5rem;
+            height: 5rem;
+            line-height: 5rem;
+            color: var(--gray-300);
+    
+            transition: color 0.2s ;
+    
+            // Distancia as aconras a partir da segunda
+            & + a {
+                margin-left: 2rem;
+            }
+            
+            &:hover{
                 color: var(--white);
-                font-weight: bolde;
-                }
-
-            &.active::after{
-                content: '';
-                height: 3px;
-                border-radius: 3px 3px 0 0 ;
-                width: 100%;
-                position: absolute;
-                bottom:1px;
-                left:0;
-                background: var(--yellow-500);
-            }   
+            }
+    
+    
+    
+            // Personalização da aba aberta
+                &.active {
+                    color: var(--white);
+                    font-weight: bolde;
+                    }
+    
+                &.active::after{
+                    content: '';
+                    height: 3px;
+                    border-radius: 3px 3px 0 0 ;
+                    width: 100%;
+                    position: absolute;
+                    bottom:1px;
+                    left:0;
+                    background: var(--yellow-500);
+                }   
+        }
     }
 
+
+
+    
+
+        button{
+            margin-left: auto;
+        }
+    
 }
